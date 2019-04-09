@@ -1,0 +1,27 @@
+
+.tile {
+  height: 200px;
+  width: 200px;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+  @for $i from 1 through 3 {
+    &:before {
+      content: '';
+      background-image: url("./../../assets/tile-decoration.png");
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      background-size: cover;
+      opacity: 0.8;
+    }
+  }
+
+
+
+  &__cover-art {
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+  }
+}
